@@ -15,8 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+    $links = [
+        'homepage',
+        'news',
+        'contact',
+        'about'
+    ];
 
-    return view('homepage');
+
+    return view('homepage', compact('links'));
     
 })->name('homepage');
 
@@ -24,14 +31,28 @@ Route::get('/', function () {
 
 Route::get('/news', function () {
 
+    $links = [
+        'homepage',
+        'news',
+        'contact',
+        'about'
+    ];
 
-    return view('news');
+
+    return view('news', compact('links'));
     
 })->name('news');
 
 
 
 Route::get('/contact', function () {
+
+    $links = [
+        'homepage',
+        'news',
+        'contact',
+        'about'
+    ];
 
     $contacts = array(
         (object) [
@@ -60,7 +81,9 @@ Route::get('/contact', function () {
         ],
     );
 
-    return view('contact', compact('contacts'));
+    
+
+    return view('contact', compact('contacts', 'links'));
     
 })->name('contact');
 
@@ -68,7 +91,14 @@ Route::get('/contact', function () {
 
 Route::get('/about', function () {
 
+    $links = [
+        'homepage',
+        'news',
+        'contact',
+        'about'
+    ];
 
-    return view('about');
+
+    return view('about', compact('links'));
     
 })->name('about');

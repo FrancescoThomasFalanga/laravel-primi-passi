@@ -19,29 +19,13 @@
         <div class="nav-bar">
             <ul>
 
-                <li>
-                    <a href=" {{route('homepage')}} ">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href=" {{route('news')}} ">
-                        News
-                    </a>
-                </li>
-
-                <li>
-                    <a href=" {{route('contact')}} ">
-                        Contact
-                    </a>
-                </li>
-
-                <li>
-                    <a href=" {{route('about')}} ">
-                        About
-                    </a>
-                </li>
+                @foreach($links as $link)
+                    <li>
+                        <a href="{{ route($link) }}">
+                            {{$link}}
+                        </a>
+                    </li>
+                @endforeach
 
             </ul>
         </div>
