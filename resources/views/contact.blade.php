@@ -20,7 +20,7 @@
     
     <nav>
         <div class="nav-bar">
-            <ul class="mb-0">
+            <ul class="mb-0 p-0">
 
                     <li>
                         <a href=" {{url('/')}} ">
