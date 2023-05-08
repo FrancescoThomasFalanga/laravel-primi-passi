@@ -8,7 +8,7 @@
 
 nav {
     width: 100vw;
-    padding: 25px;
+    padding: 5px;
     background-color: #563d7c;
 }
 
@@ -29,9 +29,4 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
-}
-
-
-.purple {
-    background-color: #563d7c;
 }

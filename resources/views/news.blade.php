@@ -19,18 +19,26 @@
 <body style="background-color: #212529">
     
     <nav>
-        <div class="nav-bar">
-            <ul class="mb-0 p-0">
-
-                @foreach($links as $link)
-                    <li>
-                        <a href="{{ route($link) }}">
-                            {{$link}}
-                        </a>
-                    </li>
-                @endforeach
-
-            </ul>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="#">
+                    <img class="rounded-circle" src="{{ asset('img/dev.png') }}" alt="" style="width:50px">
+                </a> 
+            </div>
+    
+            <div class="nav-bar">
+                <ul class="mb-0 p-0">
+    
+                    @foreach($links as $link)
+                        <li>
+                            <a href="{{ route($link) }}">
+                                {{$link}}
+                            </a>
+                        </li>
+                    @endforeach
+    
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -79,8 +87,8 @@
         </div>
     </form>
       
-    <div class="fixed-bottom purple py-3 text-light">
-        <footer class="py-1 container">
+    <div class="fixed-bottom purple py-3 text-light shadow bg-body-success">
+        <footer class="py-1 container shadow bg-body-success">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Section 1</h5>
