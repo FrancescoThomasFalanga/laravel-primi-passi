@@ -22,8 +22,16 @@ Route::get('/', function () {
         'about'
     ];
 
+    $sectionLinks = [
+        'Home',
+        'Features',
+        'Pricing',
+        'FAQs',
+        'About'
+    ];
 
-    return view('homepage', compact('links'));
+
+    return view('homepage', compact('links', 'sectionLinks'));
     
 })->name('homepage');
 
@@ -38,8 +46,16 @@ Route::get('/news', function () {
         'about'
     ];
 
+    $sectionLinks = [
+        'Home',
+        'Features',
+        'Pricing',
+        'FAQs',
+        'About'
+    ];
 
-    return view('news', compact('links'));
+
+    return view('news', compact('links', 'sectionLinks'));
     
 })->name('news');
 
@@ -52,6 +68,14 @@ Route::get('/contact', function () {
         'news',
         'contact',
         'about'
+    ];
+
+    $sectionLinks = [
+        'Home',
+        'Features',
+        'Pricing',
+        'FAQs',
+        'About'
     ];
 
     $contacts = array(
@@ -83,7 +107,7 @@ Route::get('/contact', function () {
 
     
 
-    return view('contact', compact('contacts', 'links'));
+    return view('contact', compact('links', 'sectionLinks', 'contacts'));
     
 })->name('contact');
 
@@ -98,7 +122,15 @@ Route::get('/about', function () {
         'about'
     ];
 
+    $sectionLinks = [
+        'Home',
+        'Features',
+        'Pricing',
+        'FAQs',
+        'About'
+    ];
 
-    return view('about', compact('links'));
+
+    return view('about', compact('links', 'sectionLinks'));
     
 })->name('about');

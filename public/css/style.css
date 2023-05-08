@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 nav {
@@ -31,11 +32,6 @@ ul li a:hover {
 }
 
 
-
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 40px;
+.purple {
+    background-color: #563d7c;
 }
