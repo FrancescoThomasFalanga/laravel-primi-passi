@@ -26,19 +26,19 @@
                     </li>
 
                     <li>
-                        <a href=" {{url('/news')}} ">
+                        <a href=" {{route('news')}} ">
                             News
                         </a>
                     </li>
 
                     <li>
-                        <a href=" {{url('/contact')}} ">
+                        <a href=" {{route('contact')}} ">
                             Contact
                         </a>
                     </li>
 
                     <li>
-                        <a href=" {{url('/about')}} ">
+                        <a href=" {{route('about')}} ">
                             About
                         </a>
                     </li>

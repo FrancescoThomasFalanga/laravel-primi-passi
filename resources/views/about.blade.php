@@ -19,29 +19,29 @@
         <div class="nav-bar">
             <ul>
 
-                    <li>
-                        <a href=" {{url('/')}} ">
-                            Home
-                        </a>
-                    </li>
+                <li>
+                    <a href=" {{route('homepage')}} ">
+                        Home
+                    </a>
+                </li>
 
-                    <li>
-                        <a href=" {{url('/news')}} ">
-                            News
-                        </a>
-                    </li>
+                <li>
+                    <a href=" {{route('news')}} ">
+                        News
+                    </a>
+                </li>
 
-                    <li>
-                        <a href=" {{url('/contact')}} ">
-                            Contact
-                        </a>
-                    </li>
+                <li>
+                    <a href=" {{route('contact')}} ">
+                        Contact
+                    </a>
+                </li>
 
-                    <li>
-                        <a href=" {{url('/about')}} ">
-                            About
-                        </a>
-                    </li>
+                <li>
+                    <a href=" {{route('about')}} ">
+                        About
+                    </a>
+                </li>
 
             </ul>
         </div>
