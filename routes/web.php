@@ -15,13 +15,60 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $links = [
-        'Home',
-        'News',
-        'Contact',
-        'About',
-    ];
 
-    return view('homepage', compact('links'));
+    return view('homepage');
     
-});
+})->name('homepage');
+
+
+
+Route::get('/news', function () {
+
+
+    return view('news');
+    
+})->name('news');
+
+
+
+Route::get('/contact', function () {
+
+    $contacts = array(
+        (object) [
+            'name' => 'Francesco',
+            'lastName' => 'Falanga',
+            'age' => 21,
+            'address' => "Via dei Codici, 104",
+        ],
+        (object) [
+            'name' => 'Gabriel',
+            'lastName' => 'Spanu',
+            'age' => 26,
+            'address' => "Via della Variabile, 404",
+        ],
+        (object) [
+            'name' => 'Pippo',
+            'lastName' => 'Pinco',
+            'age' => 34,
+            'address' => "Via dell'Algoritmo, sin(180)",
+        ],
+        (object) [
+            'name' => 'Paperino',
+            'lastName' => 'Topolinato',
+            'age' => 41,
+            'address' => "Via dei Codici, 808",
+        ],
+    );
+
+    return view('contact', compact('contacts'));
+    
+})->name('contact');
+
+
+
+Route::get('/about', function () {
+
+
+    return view('about');
+    
+})->name('about');

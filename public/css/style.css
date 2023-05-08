@@ -23,6 +23,7 @@ ul li a {
     padding: 10px;
     color: white;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 ul li a:hover {
@@ -36,4 +37,5 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%);
+    font-size: 40px;
 }

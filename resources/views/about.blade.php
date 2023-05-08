@@ -20,7 +20,7 @@
             <ul>
 
                     <li>
-                        <a href=" {{route('homepage')}} ">
+                        <a href=" {{url('/')}} ">
                             Home
                         </a>
                     </li>
